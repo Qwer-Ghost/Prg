@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Великий Сайт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+      max-width: 600px;
+    }
+
+    .btn {
+      padding: 0.8em 2em;
+      font-size: 1.2em;
+      background-color: #fff;
+      color: #1f4037;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0.5em;
+    }
+
+    .btn:hover {
+      background-color: #eee;
+    }
+
+    #code {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ласкаво просимо на Сайт</h1>
+  <p>Цей сайт створено, щоб надихати, для школи</p>
+  <button class="btn" onclick="alert('Дякуємо за візит!')">Натисни мене</button>
+  <button class="btn" onclick="copyCode()">Скопіювати код сайту</button>
+
+  <textarea id="code">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Великий Сайт</title>
+  <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Великий Сайт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+      max-width: 600px;
+    }
+
+    .btn {
+      padding: 0.8em 2em;
+      font-size: 1.2em;
+      background-color: #fff;
+      color: #1f4037;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0.5em;
+    }
+
+    .btn:hover {
+      background-color: #eee;
+    }
+
+    #code {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ласкаво просимо на Сайт</h1>
+  <p>Цей сайт створено, щоб надихати, для школи</p>
+  <button class="btn" onclick="alert('Дякуємо за візит!')">Натисни мене</button>
+  <button class="btn" onclick="copyCode()">Скопіювати код сайту</button>
+    </body>
+</html>
+</head>
+<body>
+  <!-- Твій вміст тут -->
+</body>
+</html>
+  </textarea>
+
+  <script>
+    function copyCode() {
+      const code = document.getElementById('code');
+      code.style.display = 'block'; 
+      code.select();
+      document.execCommand('copy');
+      code.style.display = 'none';
+      alert('Код скопійовано до буфера обміну!');
+    }
+  </script>
+</body>
+</html>
